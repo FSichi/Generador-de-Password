@@ -1,0 +1,27 @@
+.app{
+
+    .fila{
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .col{
+        width: 50%;
+    }
+
+
+    /* Estilos generales de inputs y botones */
+    @import 'estiloIB';
+
+    /* Fila: Numero de Caracteres */
+    @import 'numCaracteres';
+
+    /* Fila: Generar Contraseña */
+    @import 'generarContra';
+   
+    /* Fila: Alerta */
+    @import 'alerta';
+
+}

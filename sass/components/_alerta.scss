@@ -1,0 +1,24 @@
+@import 'variables';
+
+.fila.alerta {
+    justify-content: flex-end;
+
+    .col {
+        width: 65%;
+    }
+
+    .alerta-copiado {
+        text-align: center;
+        color: $colorAlerta;
+        transition: all .3s ease;
+
+        &.active{
+            color: $colorAlertaActive;
+        }
+
+        p,i{
+            font-size: 12px;
+        }
+    }
+
+}

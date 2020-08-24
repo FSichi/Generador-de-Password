@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/* Selection */
+/* Colores Web */
+/* Borde de Separacion */
+/* PROPIEDADES GNRALES DE LA WEB (*) */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+*::-moz-selection {
+  background: #33257E;
+  color: #fff;
+}
+
+*::selection {
+  background: #33257E;
+  color: #fff;
+}
+
+/* SELECCIONAR ELEMENTOS CON EL MOUSE */
+*::-moz-selection {
+  background: #33257E;
+  color: #fff;
+}
+
+/* SELECCIONAR ELEMENTOS CON EL MOUSE FIREFOX  */
+/* Propiedades del Body y Contenedor Gnral*/
+body {
+  /* background: #5848bb; */
+  background: #29294d;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 500px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+/* LOGO DE LA WEB */
+/* ------------------------- */
+/* Logotipo */
+/* ------------------------- */
+.logo {
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo img {
+  width: 100%;
+  /* Ancho del Contenedor Padre (.logo) */
+  vertical-align: top;
+}
+
+/* ESTILO TOTAL DE LA APP */
+
+
+.app .fila {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .col {
+  width: 50%;
+}
+
+.app label {
+  line-height: 40px;
+}
+
+.app input {
+  text-align: center;
+  border: none;
+}
+
+.app .btn {
+  width: 100%;
+  background: #22e75d;
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  vertical-align: top;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.app .btn:hover {
+  background: #B4A5FF;
+}
+
+.app .btn.false {
+  background: #f56464;
+}
+
+.app .numero-caracteres .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .numero-caracteres .botones div {
+  width: 100%;
+}
+
+.app .numero-caracteres .botones div:nth-child(1) button {
+  border-radius: 4px 0 0 4px;
+}
+
+.app .numero-caracteres .botones div:nth-child(3) button {
+  border-radius: 0 4px 4px 0;
+}
+
+.app .numero-caracteres input {
+  height: 40px;
+  width: 100%;
+  cursor: default;
+  background: #33257E;
+  color: #fff;
+}
+
+.app .fila.generar {
+  margin-bottom: 10px;
+  /* Primera Columna (Boton)*/
+  /* Segunda Columna (Input)*/
+}
+
+.app .fila.generar .col:nth-child(1) {
+  width: 30%;
+}
+
+.app .fila.generar .col:nth-child(1):hover .btn-generar:after {
+  background: #B4A5FF;
+}
+
+.app .fila.generar .col:nth-child(2) {
+  width: 65%;
+}
+
+.app .fila.generar .btn.btn-generar {
+  background: #33257E;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  padding: 0;
+  line-height: 40px;
+  position: relative;
+  z-index: 1;
+  /* Crea un cuadrado para hacer el triangulo del boton */
+}
+
+.app .fila.generar .btn.btn-generar i {
+  margin-left: 20px;
+  position: relative;
+  top: -1px;
+  font-size: 14px;
+}
+
+.app .fila.generar .btn.btn-generar:hover {
+  background: #B4A5FF;
+}
+
+.app .fila.generar .btn.btn-generar::after {
+  content: "";
+  display: inline-block;
+  background: #33257E;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 13px;
+  right: -7px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 9;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.app .fila.generar .input-password {
+  width: 100%;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.app .fila.generar .input-password:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.app .fila.generar input::-moz-selection {
+  background: #212139;
+}
+
+.app .fila.generar input::selection {
+  background: #212139;
+}
+
+.app .fila.generar input::-moz-selection {
+  background: #212139;
+}
+
+.app .fila.alerta {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.app .fila.alerta .col {
+  width: 65%;
+}
+
+.app .fila.alerta .alerta-copiado {
+  text-align: center;
+  color: rgba(255, 255, 255, 0);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.app .fila.alerta .alerta-copiado.active {
+  color: white;
+}
+
+.app .fila.alerta .alerta-copiado p, .app .fila.alerta .alerta-copiado i {
+  font-size: 12px;
+}
+
+/* Media Queries  PARA ADAPTAR PARA DISPOSITIVOS MOVILES */
+/* Selection */
+/* Colores Web */
+/* Borde de Separacion */
+@media screen and (max-width: 500px) {
+  .logo img {
+    width: 70%;
+  }
+  .app .fila {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .app .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .app .fila.generar {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding-top: 40px;
+  }
+  .app .fila.generar .btn.btn-generar::after {
+    top: auto;
+    left: 50%;
+    right: 50%;
+    bottom: -7px;
+  }
+  .app .col:nth-child(1), .app .col:nth-child(2) {
+    width: 100%;
+  }
+}
+
+/* Creditos */
+.creditos {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.creditos p, .creditos a {
+  font-size: 14px;
+}
+
+/* Redes Sociales */
+/* Selection */
+/* Colores Web */
+/* Borde de Separacion */
+.redes-sociales .btn-red-social {
+  padding: 15px 18px;
+  min-width: 120px;
+  border-radius: 5px;
+  background: #33257E;
+  color: #fff;
+  font-size: 30px;
+  margin: 0 20px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.redes-sociales .btn-red-social:hover {
+  -webkit-box-shadow: 0px 0px 30px 10px #40db6e;
+          box-shadow: 0px 0px 30px 10px #40db6e;
+}
+/*# sourceMappingURL=styles.css.map */

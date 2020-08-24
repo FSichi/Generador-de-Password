@@ -1,0 +1,45 @@
+@import 'variables';
+
+@media screen and (max-width: 500px){
+    
+    .logo img {
+		width: 70%;
+	}
+
+    .app{
+
+        .fila{
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .col{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .fila.generar {
+            border-top: $bordeSuperior;
+            padding-top:40px;
+
+            .btn{
+
+                &.btn-generar{
+
+                    &::after{
+                        top: auto;
+                        left: 50%;
+                        right: 50%;
+                        bottom: -7px;
+                    }
+                }
+            }
+
+        }
+
+        .col:nth-child(1),.col:nth-child(2) {
+            width: 100%;
+        }
+
+    }
+}

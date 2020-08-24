@@ -1,0 +1,14 @@
+/* ------------------------- */
+/* Logotipo */
+/* ------------------------- */
+.logo { 
+	margin-bottom: 40px;
+	width: 100%;
+	text-align: center;
+
+	img{
+		width: 100%;  /* Ancho del Contenedor Padre (.logo) */
+		vertical-align: top;
+	}
+
+}

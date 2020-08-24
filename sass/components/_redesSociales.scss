@@ -1,0 +1,18 @@
+@import 'variables';
+
+.redes-sociales .btn-red-social {
+  
+    padding: 15px 18px;
+    min-width: 120px;
+    border-radius: 5px;
+    background: $colorFondoBtnGenerar;
+    color: $colorLetraSelection;
+    font-size: 30px;
+    margin: 0 20px;
+    transition: .3s ease all;
+      
+  }
+  
+  .redes-sociales .btn-red-social:hover {
+      box-shadow: 0px 0px 30px 10px #40db6e;
+  }

@@ -1,0 +1,47 @@
+@import 'components/variables';
+
+/* PROPIEDADES GNRALES DE LA WEB (*) */
+@import 'components/propiedades';
+
+
+
+
+/* Propiedades del Body y Contenedor Gnral*/
+body {
+	/* background: #5848bb; */
+	background: $colorFondo;
+	color: $colorLetraSelection;
+}
+
+a {
+	color: $colorLetraSelection;
+    text-decoration: underline;
+    
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.contenedor {
+
+    max-width:500px;
+	width: 90%;
+	margin: 40px auto;
+}
+    
+
+/* LOGO DE LA WEB */ 
+@import 'components/logo';
+
+/* ESTILO TOTAL DE LA APP */ 
+@import 'components/app';
+
+/* Media Queries  PARA ADAPTAR PARA DISPOSITIVOS MOVILES */ 
+@import 'components/mediaQ';
+
+/* Creditos */
+@import 'components/creditos';
+
+/* Redes Sociales */
+@import 'components/redesSociales';
+
